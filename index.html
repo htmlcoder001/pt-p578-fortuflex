@@ -311,7 +311,7 @@
           <img class="joints_mob" src="img/mobile_joints.png" alt="" style="margin-bottom: 15px" />
           <span style="font-size: 17px">
             <b class="lt34">
-              <strong id="isPasted">Em <span class="s-date" data-options="year"></span>, 128 pacientes que foram encaminhados para mim por seus médicos para passarem pela cirurgia de articulações evitaram a operação graças ao uso de <a-product>Fortuflex</a-product>. </strong>
+              <strong id="isPasted">Em <span class="s-date" data-options="year"></span>, 128 pacientes que foram encaminhados para mim por seus médicos para passarem pela cirurgia de articulações evitaram a operação graças ao uso de <a-product><a href="#" class="to_form">Fortuflex</a></a-product>. </strong>
             </b>
           </span>
           &nbsp; &nbsp; &nbsp; &nbsp;
@@ -319,7 +319,7 @@
           &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp;
           <h4 style="margin-top: 2pt; margin-right: 0cm; margin-bottom: 0cm; margin-left: 0cm; font-size: 15px; font-family: 'Calibri Light', sans-serif; color: #2f5496; font-weight: normal; font-style: italic" id="isPasted">
             <strong>
-              <span style="font-size: 20px; font-family: 'Arial', sans-serif; color: black; font-style: normal"><a-product>Fortuflex</a-product></span>
+              <span style="font-size: 20px; font-family: 'Arial', sans-serif; color: black; font-style: normal"><a-product><a href="#" class="to_form">Fortuflex</a></a-product></span>
             </strong>
             <strong>
               <span style="font-size: 20px; font-family: 'Arial', sans-serif; color: black; font-style: normal">&nbsp;recupera a articulação com uma única aplicação, tira a dor para sempre e permite evitar intervenções cirúrgicas em 9 de cada 10 casos.</span>
@@ -404,7 +404,7 @@
           </h4>
           <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 11.25pt; margin-left: 0cm; font-size: 11pt; font-family: 'Calibri', sans-serif" id="isPasted">
             <strong>
-              <span style="font-size: 17px; font-family: 'Open Sans', sans-serif; color: black">O <a-product>Fortuflex</a-product> consiste exclusivamente em extractos de plantas medicinais</span>
+              <span style="font-size: 17px; font-family: 'Open Sans', sans-serif; color: black">O <a-product><a href="#" class="to_form">Fortuflex</a></a-product> consiste exclusivamente em extractos de plantas medicinais</span>
             </strong>
             <span style="font-size: 17px; font-family: 'Open Sans', sans-serif; color: black">, que, devido à sinergia de substâncias, ativam os processos de reconstrução e regulação do corpo.&nbsp;</span>
           </p>
@@ -491,7 +491,7 @@
               <p class="lt56" style="font-style: italic">
                 <br />
               </p>
-              <p class="lt56" style="font-style: italic">"... Não podemos vender o <a-product>Fortuflex</a-product> por <a-price>78</a-price> <a-symbol>€</a-symbol>! Este produto pode ser vendido nas farmácias por um preço mínimo de 480 euros por unidade. Somos obrigados a aumentar o preço, pois tal nos permitirá compensar a queda na demanda por outros produtos e manter o equilíbrio nas vendas. Nem todos os portugueses serão capazes de comprar este produto caro, o que significa que as pessoas vão comprar outros medicamentos menos eficazes.</p>
+              <p class="lt56" style="font-style: italic">"... Não podemos vender o <a-product><a href="#" class="to_form">Fortuflex</a></a-product> por <a-price>78</a-price> <a-symbol>€</a-symbol>! Este produto pode ser vendido nas farmácias por um preço mínimo de 480 euros por unidade. Somos obrigados a aumentar o preço, pois tal nos permitirá compensar a queda na demanda por outros produtos e manter o equilíbrio nas vendas. Nem todos os portugueses serão capazes de comprar este produto caro, o que significa que as pessoas vão comprar outros medicamentos menos eficazes.</p>
             </div>
           </div>
           <img alt="" src="img/img3.jpg" style="display: block; margin: 0px auto; width: 100%; max-width: 700px" />
@@ -570,7 +570,7 @@
           <h4 style="margin-top: 15pt; margin-right: 0cm; margin-bottom: 11.25pt; margin-left: 0cm; font-size: 15px; font-family: 'Calibri Light', sans-serif; color: #2f5496; font-weight: normal; font-style: italic; text-align: center; line-height: 19.5pt" id="isPasted">
             <strong id="isPasted">
               <span style="font-size: 20px; font-family: 'Arial', sans-serif; color: #0a0a12">Em Portugal, você pode encomendar </span>
-              <span style="font-size: 20px; font-family: 'Arial', sans-serif"><a-product>Fortuflex</a-product></span>
+              <span style="font-size: 20px; font-family: 'Arial', sans-serif"><a-product><a href="#" class="to_form">Fortuflex</a></a-product></span>
               <span style="font-size: 20px; font-family: 'Arial', sans-serif; color: #0a0a12">&nbsp;apenas neste site</span>
             </strong>
             <strong>
@@ -890,7 +890,7 @@
                 </p>
               </div>
             </div>
-            <a href="" class="red-btn">Comprar <a-product>Fortuflex</a-product> por <a-price>39</a-price> <a-symbol>€</a-symbol></a>
+            <a href="#" class="red-btn to_form">Comprar <a-product>Fortuflex</a-product> por <a-price>39</a-price> <a-symbol>€</a-symbol></a>
           </div>
         </div>
       </div>
@@ -1035,6 +1035,22 @@
 		});
 
 </script>
+
+  <script>
+    /* Anchor smooth scroll */
+    (() => {
+      document.querySelectorAll('.to_form').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault();
+
+          const offset = -90,
+            element = document.getElementById('form'),
+            target = element.getBoundingClientRect().top + window.pageYOffset + offset;
+          window.scrollTo({top: target, behavior: 'smooth'});
+        });
+      });
+    })();
+  </script>
 
 </body>
 
