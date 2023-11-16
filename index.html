@@ -491,7 +491,7 @@
               <p class="lt56" style="font-style: italic">
                 <br />
               </p>
-              <p class="lt56" style="font-style: italic">"... Não podemos vender o <a-product>Fortuflex</a-product> por <a-price>39</a-price> <a-symbol>€</a-symbol>! Este produto pode ser vendido nas farmácias por um preço mínimo de 480 euros por unidade. Somos obrigados a aumentar o preço, pois tal nos permitirá compensar a queda na demanda por outros produtos e manter o equilíbrio nas vendas. Nem todos os portugueses serão capazes de comprar este produto caro, o que significa que as pessoas vão comprar outros medicamentos menos eficazes.</p>
+              <p class="lt56" style="font-style: italic">"... Não podemos vender o <a-product>Fortuflex</a-product> por <a-price>78</a-price> <a-symbol>€</a-symbol>! Este produto pode ser vendido nas farmácias por um preço mínimo de 480 euros por unidade. Somos obrigados a aumentar o preço, pois tal nos permitirá compensar a queda na demanda por outros produtos e manter o equilíbrio nas vendas. Nem todos os portugueses serão capazes de comprar este produto caro, o que significa que as pessoas vão comprar outros medicamentos menos eficazes.</p>
             </div>
           </div>
           <img alt="" src="img/img3.jpg" style="display: block; margin: 0px auto; width: 100%; max-width: 700px" />
@@ -621,84 +621,71 @@
             <span style="font-size: 17px; font-family: 'Open Sans', sans-serif; color: black" id="isPasted">Pesquisas mostraram que o mês de <span class="s-date" data-options="month:long"></span> é o melhor momento para iniciar o tratamento das articulações. A estabilização da temperatura média acelera os processos metabólicos no corpo e intensifica a ação. O tratamento é 37% mais rápido do que em outras épocas do ano</span>
             <span style="font-size: 17px">.&nbsp;</span>
           </p>
-          <img alt="" class="product__10" src="img/prod.png" style="display: block; margin: 0 auto; width: 100%; max-width: 380px" />
+          <!--<img alt="" class="product__10" src="img/prod.png" style="display: block; margin: 0 auto; width: 100%; max-width: 380px" />-->
           <div class="productsale">
             <div class="timer lt77">
               <p>A oferta especial terminará em breve:</p>
               <div id="clock">
-                <span class="countdown" id="min" style="color: red">8</span>
+                <span class="countdown" id="min" style="color: red">30</span>
                 &nbsp;:
-                <span class="countdown" id="sec" style="color: red">46</span>
+                <span class="countdown" id="sec" style="color: red">00</span>
               </div>
             </div>
             <div class="order_form">
               <br />
             </div>
             <div class="lead-form-box">
-			
-              <form method="post" action="index.php" id="lead-form" name="lead-form">
-			  
-<input name="subid" type="hidden" value="{subid}">
-<input name="px" type="hidden" value="{px}">
-<input name="bayer" type="hidden" value="{bayer}">
-			  
-                <img src="img/med.png" style="max-width: 100px; margin-top: 20px" />
-                <h2>Formulário de pedido oficial&nbsp;</h2>
-                <p style="color: blue; font-size: 14px">
-                  <br />
-                </p>
-                <p style="color: blue; font-size: 14px">
-                  №29 957 de
-                  <span class="s-date" data-options="day,month:long,year"></span>
-                </p>
-                <p style="color: blue; font-size: 14px">
-                  <br />
-                </p>
-                <div>
-                  <p style="font-size: 16px">Para comprar <a-product>Fortuflex</a-product> 
-				  nos âmbitos do programa preferencial.</p>
-                </div>
-                <div class="blue-border">
-                  <span>
-                    <strong id="isPasted">Para receber&nbsp;<a-product>Fortuflex</a-product>, 
-					insira o seu nome e o número de telefone nos campos abaixo e carregue no botão&nbsp;</strong>
-					
-                    <strong id="isPasted">COMPRAR POR <a-price>39</a-price> <a-symbol>€</a-symbol></strong>
-                  </span>
-                </div>
-                <div class="fields-box">
-                  <div class="name-field">
-				  <br>
-                     <!-- <label for="text">O seu nome:</label> -->
-                    <input type="text" name="name"
-					placeholder="O seu nome:" class="ym-record-keys" required="" />
+  
+              <link rel="stylesheet" href="form.css">
+              
+              <div id="form">
+    
+                <div id="form_image">
+                  <div class="form_image_wrap_image">
+                    <img src="img/prod.png" alt="">
                   </div>
-                  <div class="phone-field">
-                    <input type="tel" name="phone" class="phoneMask ym-record-keys" 
-					placeholder="Telefone (telemóvel activo)" required="" />
-                  </div>
-                  <div id="lead-form-result">
-                    <br />
-                  </div>
-                  <button type="submit" id="send-lead">
-                    Obtenez pour
-                    <span class="new_price_val">
-                      <a-price><a-price>39</a-price></a-price>
-                    </span>
-                    <span class="new_price_cur">
-                      <a-currency><a-symbol>€</a-symbol></a-currency>
-                    </span>
-                  </button>
                 </div>
-                <div style="margin-bottom: 20px">
-                  <span>
-                    *
-                    <strong>Protecção de dados confidenciais</strong>
-                    <strong>.</strong>
-                    Os seus dados serão transmitidos directamente ao fabricante do remédio. Ninguém além dele terá acesso a eles.&nbsp;
-                  </span>
+    
+    
+                <div class="form_wrap" id="objectScrollAttention">
+                  <form method="POST" geo="pt" action="api.php" onsubmit="return validate_form(this, 'Digite o número de telefone correto');">
+                    <label class="descount">Desconto de -50%</label>
+        
+                    <div id="price">
+                      <div class="price_new">
+                        39&nbsp;€
+                      </div>
+                      <div class="price_old">
+                        78&nbsp;€
+                      </div>
+                    </div>
+        
+                    <center><label class="inp_name">Nome</label></center>
+                    <input name="name" placeholder="" required="" type="text">
+        
+                    <center><label class="inp_phone">Telefone (telemóvel activo)
+                    </label></center>
+                    <input name="phone" placeholder="" required="" type="tel" id="phone">
+        
+                    <input name="subid" type="hidden" value="{subid}">
+                    <input name="px" type="hidden" value="{px}">
+                    <input name="bayer" type="hidden" value="{bayer}">
+                    <br>
+                    <button type="submit" class="btnn">ENCOMENDAR</button>
+        
+                    <div class="sus">&nbsp;
+                      <div class="sus_wrwp_img">
+                        <img src="form/security.png" alt="">
+                      </div>
+                      <div class="sus_text">Os seus dados são confidenciais.</div>
+                    </div>
+      
+                  </form>
                 </div>
-              </form>
+  
+              </div>
+            
+            
             </div>
             <h4 class="lt82" style="font-size: 24px; padding-left: 10px">Comentários:</h4>
             <div class="comments__box">
@@ -856,9 +843,9 @@
               </div>
               <div class="comments__wrap">
                 <p style="margin-top: 0cm; margin-right: 0cm; margin-bottom: 11.25pt; margin-left: 0cm; font-size: 11pt; font-family: 'Calibri', sans-serif" id="isPasted">
-                  <span style="font-size: 17px; font-family: 'Open Sans', sans-serif; color: black" id="isPasted">Fui inspirada pela história do professor e das pessoas que já experimentaram. É que os medicamentos comuns para a artrite só me ajudavam temporariamente. O <a-product>Fortuflex</a-product> ajudou-me muito rapidamente. Após dois dias de uso, já me senti tão bem que não pude deixar de escrever aqui. Muito obrigada, agora vou finalmente viver sem dor</span>
-                  <span style="font-size: 17px">!&nbsp;</span>
+                  <span style="font-size: 17px; font-family: 'Open Sans', sans-serif; color: black" id="isPasted">Fui inspirada pela história do professor e das pessoas que já experimentaram. É que os medicamentos comuns para a artrite só me ajudavam temporariamente. O <a-product>Fortuflex</a-product> ajudou-me muito rapidamente. Após dois dias de uso, já me senti tão bem que não pude deixar de escrever aqui. Muito obrigada, agora vou finalmente viver sem dor!</span>
                 </p>
+                <img alt="" class="img__wrap" src="asset/2-6.jpg" width="100%" />
               </div>
             </div>
             <div class="comments__box">
@@ -901,7 +888,6 @@
                 <p class="lt122" style="font-size: 17px">
                   Não quero morrer na cama de um hospital! Acabei de encomendar o <a-product>Fortuflex</a-product> por <a-price>39</a-price> <a-symbol>€</a-symbol>.
                 </p>
-                <img alt="" class="img__wrap" src="asset/2-6.jpg" width="100%" />
               </div>
             </div>
             <a href="" class="red-btn">Comprar <a-product>Fortuflex</a-product> por <a-price>39</a-price> <a-symbol>€</a-symbol></a>
